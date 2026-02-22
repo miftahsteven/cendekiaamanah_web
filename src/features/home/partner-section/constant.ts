@@ -1,0 +1,18 @@
+export const PARTNERS = [
+  { name: "Arrahmah", image: "/images/partners/arrahmah.png" },
+  { name: "Askrindo", image: "/images/partners/askrindo.png" },
+  { name: "Asyki", image: "/images/partners/asyki.svg" },
+  { name: "Baznas", image: "/images/partners/baznas.png" },
+  { name: "Bank Indonesia", image: "/images/partners/bi.png" },
+  { name: "ESQ", image: "/images/partners/esq.svg" },
+  { name: "FOZ", image: "/images/partners/foz.png" },
+  { name: "Gappi", image: "/images/partners/gappi.svg" },
+  { name: "Kemenag", image: "/images/partners/kemenag.png" },
+  { name: "Lazisnu", image: "/images/partners/laziznu.png" },
+  { name: "Mayora", image: "/images/partners/mayora.png" },
+  { name: "MTT", image: "/images/partners/mtt.png" },
+  { name: "MUI", image: "/images/partners/mui.png" },
+  { name: "Paragon", image: "/images/partners/paragon.png" },
+  { name: "Poroz", image: "/images/partners/poroz.png" },
+  { name: "Rumah Zakat", image: "/images/partners/rumah-zakat.png" },
+];

@@ -7,13 +7,13 @@ export async function middleware(request: NextRequest) {
 
   // Check if the request is for the dashboard
   if (request.nextUrl.pathname.startsWith("/dashboard")) {
-    if (!session) {
+    if (!session?.user) {
       return NextResponse.redirect(new URL("/login", request.url));
     }
   }
 
   // Redirect logged-in users away from login page
-  if (request.nextUrl.pathname === "/login" && session) {
+  if (request.nextUrl.pathname === "/login" && session?.user) {
     return NextResponse.redirect(new URL("/dashboard", request.url));
   }
 

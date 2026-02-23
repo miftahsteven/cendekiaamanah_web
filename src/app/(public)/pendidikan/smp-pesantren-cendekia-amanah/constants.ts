@@ -31,8 +31,8 @@ export const SMP_HERO_CONTENT = {
   ],
   email: "smp@cendekiaamanah.id",
   phone: "+62 851-8336-8851",
-  registrationLink:
-    "https://docs.google.com/forms/d/e/1FAIpQLScTzlwVYinYQQ6DqkksZKHi6cRy2HWjBemuK8bHzB9s3SEJ2A/viewform",
+  //registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScTzlwVYinYQQ6DqkksZKHi6cRy2HWjBemuK8bHzB9s3SEJ2A/viewform",
+  registrationLink: "https://s.id/SPMBSMPPCA2627",
   registrationLabel: "DAFTAR SPMB TA 26/27",
 };
 

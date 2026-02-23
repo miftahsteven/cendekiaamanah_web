@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
@@ -21,9 +22,15 @@ export default function LoginPage() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [captchaValue, setCaptchaValue] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!captchaValue) {
+      setError("Harap selesaikan captcha terlebih dahulu");
+      return;
+    }
+    
     setIsLoading(true);
     setError("");
 
@@ -92,7 +99,15 @@ export default function LoginPage() {
                 disabled={isLoading}
               />
             </div>
-            <Button type="submit" className="w-full" disabled={isLoading}>
+
+            <div className="flex justify-center my-2 overflow-hidden">
+              <ReCAPTCHA
+                sitekey="6LeNC3UsAAAAAK84vwyGCMqBaF401SdZOIBw4GI4"
+                onChange={(value) => setCaptchaValue(value)}
+              />
+            </div>
+
+            <Button type="submit" className="w-full" disabled={isLoading || !captchaValue}>
               {isLoading ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />

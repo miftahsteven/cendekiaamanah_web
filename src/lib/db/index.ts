@@ -4,7 +4,16 @@ import * as schema from "./schema";
 
 const connectionString = process.env.DATABASE_URL!;
 
-// For query client
-const client = postgres(connectionString, { prepare: false });
+const globalForDb = globalThis as unknown as {
+  conn: postgres.Sql | undefined;
+};
+
+// Gunakan koneksi global yang sudah ada jika ada, jika tidak buat baru.
+// Ini mencegah error "too many connections" saat Next.js hot-reload di development.
+const client = globalForDb.conn ?? postgres(connectionString, { prepare: false });
+
+if (process.env.NODE_ENV !== "production") {
+  globalForDb.conn = client;
+}
 
 export const db = drizzle(client, { schema });

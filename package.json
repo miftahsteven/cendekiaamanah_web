@@ -53,6 +53,7 @@
     "@types/bcryptjs": "^3.0.0",
     "@types/node": "^20",
     "@types/nodemailer": "^7.0.9",
+    "@types/pg": "^8.16.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "dotenv": "^17.2.3",

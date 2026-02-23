@@ -10,8 +10,10 @@ const globalForDb = globalThis as unknown as {
 
 // Gunakan koneksi global yang sudah ada jika ada, jika tidak buat baru.
 // Ini mencegah error "too many connections" saat Next.js hot-reload di development.
-const client = globalForDb.conn ?? postgres(connectionString, { prepare: false });
-
+const client = globalForDb.conn ?? postgres(connectionString, { 
+  prepare: false, 
+  max: 1 // Batasi 1 koneksi per instance untuk mencegah "too many clients" di produksi/build
+});
 if (process.env.NODE_ENV !== "production") {
   globalForDb.conn = client;
 }

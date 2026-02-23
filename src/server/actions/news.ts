@@ -121,7 +121,7 @@ export async function createNews(data: {
 }) {
   try {
     const session = await auth();
-    if (!session?.user || (session.user as any).role !== 1) {
+    if (!session?.user || (session.user as any).role !== "1") {
       return { success: false, error: "Unauthorized" };
     }
 
@@ -171,7 +171,7 @@ export async function updateNews(
 ) {
   try {
     const session = await auth();
-    if (!session?.user || (session.user as any).role !== 1) {
+    if (!session?.user || (session.user as any).role !== "1") {
       return { success: false, error: "Unauthorized" };
     }
 
@@ -258,7 +258,7 @@ export async function updateNews(
 export async function deleteNews(id: number) {
   try {
     const session = await auth();
-    if (!session?.user || (session.user as any).role !== 1) {
+    if (!session?.user || (session.user as any).role !== "1") {
       return { success: false, error: "Unauthorized" };
     }
 

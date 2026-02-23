@@ -74,7 +74,7 @@ export async function createGalleryItem(data: {
 }) {
   try {
     const session = await auth();
-    if (!session?.user || (session.user as any).role !== 1) {
+    if (!session?.user || (session.user as any).role !== "1") {
       return { success: false, error: "Unauthorized" };
     }
 
@@ -104,7 +104,7 @@ export async function updateGalleryItem(
 ) {
   try {
     const session = await auth();
-    if (!session?.user || (session.user as any).role !== 1) {
+    if (!session?.user || (session.user as any).role !== "1") {
       return { success: false, error: "Unauthorized" };
     }
 
@@ -169,7 +169,7 @@ export async function updateGalleryItem(
 export async function deleteGalleryItem(id: number) {
   try {
     const session = await auth();
-    if (!session?.user || (session.user as any).role !== 1) {
+    if (!session?.user || (session.user as any).role !== "1") {
       return { success: false, error: "Unauthorized" };
     }
 

@@ -63,7 +63,7 @@ const menuItems = [
   { label: "Kontak", href: "/kontak" },
   {
     label: "Zakat & Wakaf",
-    href: "https://amanahzakat.org",
+    href: "https://amanahzakat.id",
     external: true,
   },
 ];

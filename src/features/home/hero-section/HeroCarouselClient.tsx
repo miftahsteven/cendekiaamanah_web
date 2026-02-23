@@ -107,7 +107,7 @@ export function HeroCarouselClient({
               {/* Row 1: Title and Bullets */}
               <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 md:gap-6">
                 <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight max-w-5xl tracking-tight font-manrope">
-                  {slides[activeIndex].title || "Selamat Datang"}
+                  {slides[activeIndex].title || ""}
                 </h1>
 
                 {/* Bullets */}
@@ -145,7 +145,7 @@ export function HeroCarouselClient({
               <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 md:gap-8">
                 {slides[activeIndex].subtitle && (
                   <p className="text-sm md:text-lg text-white/90 max-w-2xl leading-relaxed font-light">
-                    {slides[activeIndex].subtitle}
+                    {slides[activeIndex].subtitle || ""}
                   </p>
                 )}
 

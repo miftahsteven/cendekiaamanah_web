@@ -35,7 +35,7 @@ export const KOPERASI_HERO_CONTENT = {
       label: "YouTube",
     },
   ],
-  email: "koperasi@cendekiaamanah.id",
+  email: "pesantrencendekia.amanah@gmail.com",
   phone: "(021) 7788-9900",
   registrationLink: "/kontak",
   registrationLabel: "HUBUNGI KAMI",

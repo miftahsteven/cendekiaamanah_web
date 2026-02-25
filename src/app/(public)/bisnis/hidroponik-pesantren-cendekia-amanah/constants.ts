@@ -33,7 +33,7 @@ export const HIDROPONIK_HERO_CONTENT = {
       label: "YouTube",
     },
   ],
-  email: "bisnis@cendekiaamanah.id",
+  email: "pesantrencendekia.amanah@gmail.com",
   phone: "(021) 7788-9900",
   registrationLink: "https://order.cendekiaamanah.id",
   registrationLabel: "PESAN SAYURAN SEKARANG",

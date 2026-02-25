@@ -108,7 +108,7 @@ export function HeroSection({
               <div>
                 <p className="text-sm text-gray-500 mb-1">Email</p>
                 <a
-                  href="mailto:info@cendekiaamanah.id"
+                  href="mailto:pesantrencendekia.amanah@gmail.com"
                   className="font-medium transition-colors"
                 >
                   <span>{email}</span>

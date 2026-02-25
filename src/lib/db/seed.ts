@@ -37,13 +37,13 @@ async function seed() {
       .insert(users)
       .values({
         name: "Admin",
-        email: "admin@cendekiaamanah.id",
+        email: "pesantrencendekia.amanah@gmail.com",
         password: hashedPassword,
         role: "admin",
       })
       .onConflictDoNothing();
     console.log("✅ Admin user created!");
-    console.log("   Email: admin@cendekiaamanah.id");
+    console.log("   Email: pesantrencendekia.amanah@gmail.com");
     console.log("   Password: admin123");
 
     console.log("\n🎉 Database seeding completed!");

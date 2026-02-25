@@ -34,7 +34,7 @@ export const PESANTREN_HERO_CONTENT = {
       label: "YouTube",
     },
   ],
-  email: "info@cendekiaamanah.id",
+  email: "pesantrencendekia.amanah@gmail.com",
   phone: "+62857-7644-6468",
   registrationLink: "https://bit.ly/SPMB_SMAPCA_26-27",
   registrationLabel: "DAFTAR SPMB TA 26/27",

@@ -29,7 +29,7 @@ export const SMP_HERO_CONTENT = {
       label: "YouTube",
     },
   ],
-  email: "smp@cendekiaamanah.id",
+  email: "pesantrencendekia.amanah@gmail.com",
   phone: "+62 851-8336-8851",
   //registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScTzlwVYinYQQ6DqkksZKHi6cRy2HWjBemuK8bHzB9s3SEJ2A/viewform",
   registrationLink: "https://s.id/SPMBSMPPCA2627",

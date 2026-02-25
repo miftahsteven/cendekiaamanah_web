@@ -211,10 +211,10 @@ export function Footer() {
                     Email
                   </p>
                   <a
-                    href="mailto:info@cendekiaamanah.id"
+                    href="mailto:pesantrencendekia.amanah@gmail.com"
                     className="font-medium hover:underline hover:text-white transition-colors"
                   >
-                    info@cendekiaamanah.id
+                    pesantrencendekia.amanah@gmail.com
                   </a>
                 </div>
               </div>

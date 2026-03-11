@@ -7,7 +7,7 @@ import {
   Link as LinkIcon,
   Check,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface ShareButtonsProps {
   title: string;
@@ -37,10 +37,17 @@ function ShareLinkButton({ icon, href, label, className }: ShareButtonProps) {
 
 export function ShareButtons({ title, url }: ShareButtonsProps) {
   const [copied, setCopied] = useState(false);
+  const [currentUrl, setCurrentUrl] = useState(url);
   const shareText = `Baca berita terbaru: ${title}`;
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setCurrentUrl(window.location.href);
+    }
+  }, []);
+
   const handleCopy = () => {
-    navigator.clipboard.writeText(url);
+    navigator.clipboard.writeText(currentUrl);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -54,7 +61,7 @@ export function ShareButtons({ title, url }: ShareButtonsProps) {
         <ShareLinkButton
           icon={<Facebook className="w-4 h-4" />}
           href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-            url,
+            currentUrl,
           )}`}
           label="Share on Facebook"
         />
@@ -62,13 +69,13 @@ export function ShareButtons({ title, url }: ShareButtonsProps) {
           icon={<Twitter className="w-4 h-4" />}
           href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
             shareText,
-          )}&url=${encodeURIComponent(url)}`}
+          )}&url=${encodeURIComponent(currentUrl)}`}
           label="Share on Twitter"
         />
         <ShareLinkButton
           icon={<Linkedin className="w-4 h-4" />}
           href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
-            url,
+            currentUrl,
           )}&title=${encodeURIComponent(title)}`}
           label="Share on LinkedIn"
         />

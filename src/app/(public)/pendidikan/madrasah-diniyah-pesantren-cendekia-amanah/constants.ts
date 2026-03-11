@@ -35,7 +35,7 @@ export const DINIYAH_HERO_CONTENT = {
     },
   ],
   email: "pesantrencendekia.amanah@gmail.com",
-  phone: "+62 852-9039-2246",
+  phone: "+62 857-7644-6468",
   //registrationLink: "https://bit.ly/SPMB_SMAPCA_26-27",
   registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSf8NAbuezczVWjF3kYM6MuhSvsCYIfk_UpIq5rz8DJqiGEPrA/viewform",
   registrationLabel: "DAFTAR SPMB TA 26/27",

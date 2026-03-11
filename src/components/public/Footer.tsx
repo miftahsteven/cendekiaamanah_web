@@ -228,12 +228,12 @@ export function Footer() {
                     Telepon
                   </p>
                   <a
-                    href="https://wa.me/6285290392246"
+                    href="https://wa.me/6285776446468"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-medium hover:underline hover:text-white transition-colors"
                   >
-                    +62 852-9039-2246
+                    +62-857-7644-6468
                   </a>
                 </div>
               </div>

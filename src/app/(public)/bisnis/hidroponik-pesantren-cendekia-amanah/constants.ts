@@ -35,7 +35,7 @@ export const HIDROPONIK_HERO_CONTENT = {
   ],
   email: "pesantrencendekia.amanah@gmail.com",
   phone: "(021) 7788-9900",
-  registrationLink: "https://order.cendekiaamanah.id",
+  registrationLink: "https://order.cendekiaamanah.sch.id",
   registrationLabel: "PESAN SAYURAN SEKARANG",
 };
 

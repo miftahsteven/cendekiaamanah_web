@@ -89,7 +89,7 @@ export default async function NewsDetailPage(props: PageProps) {
   // Current URL for sharing
   // In Server Components, getting full URL is tricky without headers.
   // We can construct it.
-  const shareUrl = `https://cendekiaamanah.id/berita/${slug}`; // Replace with env var if possible
+  const shareUrl = `https://cendekiaamanah.sch.id/berita/${slug}`; // Replace with env var if possible
   const shareText = `Baca berita terbaru: ${news.title}`;
 
   // Image URL helper

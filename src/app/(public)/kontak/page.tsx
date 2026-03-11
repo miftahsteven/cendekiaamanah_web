@@ -28,20 +28,20 @@ const SOCIAL_MEDIA = [
 const CONTACT_UNITS = [
   {
     title: "Whatsapp Admin Madrasah Diniyah",
-    number: "+6285290392246",
-    href: "https://wa.me/6285290392246",
+    number: "+6285776446468",
+    href: "https://wa.me/6285776446468",
     unit: "Madrasah Diniyah",
   },
   {
     title: "Whatsapp SMP Pesantren Cendekia Amanah",
-    number: "+6285290392246",
-    href: "https://wa.me/6285290392246",
+    number: "+6285776446468",
+    href: "https://wa.me/6285776446468",
     unit: "SMP",
   },
   {
     title: "Whatsapp SMA Pesantren Cendekia Amanah",
-    number: "+6285290392246",
-    href: "https://wa.me/6285290392246",
+    number: "+6285776446468",
+    href: "https://wa.me/6285776446468",
     unit: "SMA",
   },
 ];

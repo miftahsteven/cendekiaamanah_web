@@ -150,8 +150,8 @@ export async function createNews(data: {
     revalidatePath("/dashboard/news");
     revalidatePath("/");
     revalidatePath("/profile");
-    revalidateTag("news");
-    revalidateTag("berita");
+    revalidateTag("news", "max");
+    revalidateTag("berita", "max");
     return { success: true };
   } catch (error) {
     console.error("Error creating news:", error);
@@ -248,8 +248,8 @@ export async function updateNews(
     revalidatePath("/dashboard/news");
     revalidatePath("/");
     revalidatePath("/profile");
-    revalidateTag("news");
-    revalidateTag("berita");
+    revalidateTag("news", "max");
+    revalidateTag("berita", "max");
     return { success: true };
   } catch (error) {
     console.error("Error updating news:", error);
@@ -293,8 +293,8 @@ export async function deleteNews(id: number) {
     revalidatePath("/dashboard/news");
     revalidatePath("/");
     revalidatePath("/profile");
-    revalidateTag("news");
-    revalidateTag("berita");
+    revalidateTag("news", "max");
+    revalidateTag("berita", "max");
     return { success: true };
   } catch (error) {
     console.error("Error deleting news:", error);

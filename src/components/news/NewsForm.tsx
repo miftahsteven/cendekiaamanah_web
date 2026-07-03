@@ -303,11 +303,26 @@ export function NewsForm({
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="null">Umum (Semua Unit)</SelectItem>
-                        {units.map((unit) => (
-                          <SelectItem key={unit.id} value={unit.id.toString()}>
-                            {unit.name}
-                          </SelectItem>
-                        ))}
+                        {units.map((unit) => {
+                          let label = unit.name;
+                          if (unit.name.toLowerCase().includes("sma")) {
+                            label = "SMA";
+                          } else if (unit.name.toLowerCase().includes("smp")) {
+                            label = "SMP";
+                          } else if (
+                            unit.name.toLowerCase().includes("hidroponik") ||
+                            unit.name.toLowerCase().includes("koperasi")
+                          ) {
+                            label = "Bisnis";
+                          } else if (unit.name.toLowerCase().includes("diniyah")) {
+                            label = "Madrasah Diniyah";
+                          }
+                          return (
+                            <SelectItem key={unit.id} value={unit.id.toString()}>
+                              {label}
+                            </SelectItem>
+                          );
+                        })}
                       </SelectContent>
                     </Select>
                   )}

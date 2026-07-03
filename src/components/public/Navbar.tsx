@@ -23,6 +23,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
 const menuItems = [
+  { label: "Beranda", href: "/" },
   { label: "Profile", href: "/profile" },
   {
     label: "Pendidikan",

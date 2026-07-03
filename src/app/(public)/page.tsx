@@ -7,6 +7,7 @@ import { GallerySection } from "@/features/home/gallery-section/GallerySection";
 import { Suspense } from "react";
 import { GallerySkeleton } from "@/components/common/GallerySkeleton";
 import { TestimonialSection } from "@/features/home/testimonial-section/TestimonialSection";
+import { WhatsAppFloatingButton } from "@/components/common/WhatsAppFloatingButton";
 
 export default function HomePage() {
   return (
@@ -36,6 +37,9 @@ export default function HomePage() {
 
       {/* Testimonial Section */}
       <TestimonialSection />
+
+      {/* WhatsApp Floating Button */}
+      <WhatsAppFloatingButton />
     </div>
   );
 }

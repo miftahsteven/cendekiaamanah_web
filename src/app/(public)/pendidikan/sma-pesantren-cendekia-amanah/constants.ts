@@ -37,7 +37,7 @@ export const SMA_HERO_CONTENT = {
   email: "pesantrencendekia.amanah@gmail.com",
   phone: "+62858-8866-3587",
   registrationLink: "https://bit.ly/SPMB_SMAPCA_26-27",
-  registrationLabel: "DAFTAR SPMB TA 26/27",
+  registrationLabel: "DAFTAR SPMB TA 27/28",
 };
 
 export const SMA_MOTTO_CONTENT = {

@@ -40,13 +40,13 @@ const REGISTRATION_UNITS = [
   },
   {
     title: SMP_HERO_CONTENT.title,
-    url: SMP_HERO_CONTENT.registrationLink,
+    url: "https://forms.gle/C6kY2jP6bgrstbaZA", //SMP_HERO_CONTENT.registrationLink,
     label: SMP_HERO_CONTENT.registrationLabel,
     unit: "SMP",
   },
   {
     title: SMA_HERO_CONTENT.title,
-    url: SMA_HERO_CONTENT.registrationLink,
+    url: "https://bit.ly/SPMB_SMAPCA_27-28", //SMA_HERO_CONTENT.registrationLink,
     label: SMA_HERO_CONTENT.registrationLabel,
     unit: "SMA",
   },

@@ -33,7 +33,7 @@ export const SMP_HERO_CONTENT = {
   phone: "+62 851-8336-8851",
   //registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScTzlwVYinYQQ6DqkksZKHi6cRy2HWjBemuK8bHzB9s3SEJ2A/viewform",
   registrationLink: "https://s.id/SPMBSMPPCA2627",
-  registrationLabel: "DAFTAR SPMB TA 26/27",
+  registrationLabel: "DAFTAR SPMB TA 27/28",
 };
 
 export const SMP_MOTTO_CONTENT = {
@@ -133,7 +133,7 @@ export const SMP_FACILITY_CONTENT = {
   title: "Sarana Belajar yang Mendukung Perkembangan Siswa",
   description:
     "SMP Pesantren Cendekia Amanah menyediakan fasilitas lengkap yang mendukung proses pembelajaran dan pengembangan potensi siswa secara optimal.",
-  buttonText: "DAFTAR SPMB TA 26/27",
+  buttonText: "DAFTAR SPMB TA 27/28",
   buttonLink: "/daftar",
 };
 
